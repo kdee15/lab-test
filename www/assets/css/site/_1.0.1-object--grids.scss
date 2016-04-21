@@ -47,6 +47,19 @@
         }
     }
     
+    .two-thirds {
+        
+        @extend .grid__item;
+        @extend .two-thirds;
+        
+        &.mobi {
+        
+            @extend .feature--one-whole;
+            @extend .mobile--one-whole;
+            
+        }
+    }
+    
     // A.3. END -------------------------------------------------------------------------------------------------------
                 
     // A.4. QUARTER ---------------------------------------------------------------------------------------------------
@@ -58,7 +71,6 @@
         
         &.mobi {
         
-            @extend .desk--one-half;
             @extend .feature--one-whole;
             @extend .mobile--one-whole;
             

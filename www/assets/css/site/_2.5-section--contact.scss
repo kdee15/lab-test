@@ -4,49 +4,32 @@
 
 // A.1. HOME -----------------------------------------------------------------------------------------------------
 
-#section-contact {
-
-    background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
-    background-size: cover;
-    color: $kd-grey60;
-
-    .section-header { 
+.section-contact {
+    
+    // A.1.1. Contact Side Buttons
+    
+    .form__contact {
+    
+        .single {
+            
+            &.button { display: inline-block; margin: $baseline 0; }
         
-        margin-bottom: $baseline-large;
-        
-        .icon { @include icon (150px, 150px, $white); }
-    
-    }
-    
-    p { color: $kd-grey60; width: 40%; margin: 0 auto; margin-bottom: $baseline; }
-    h3 { color: $kd-grey60; width: 40%; margin: 0 auto; margin-bottom: $baseline-large; }
-
-    .social-media {
-    
-        margin: 0;
-        padding-left: 0;
-        text-align: center!important;
-    
-    }
-    
-    .linked-in { 
-        
-        background: rgba($kd-grey90,0.8); padding: $baseline-large 0; margin-top: $baseline-large; 
-
-        .logo { 
-
-            @include icon (180px, 50px, $kd-blueLight);
-            margin-left: $baseline-small;
-            vertical-align: middle; 
-
         }
-
-        p { vertical-align: middle; margin: 0; line-height: 50px; width: auto; }
-        
     }
     
-    padding-bottom: 0!important;
-    text-align: center;
+    // A.1.1. Contact Side Buttons
+    
+    .contact__aside {
+    
+        .grid {
+            
+            .one-half { @extend .tablet--one-whole; margin: $baseline-small 0; }
+        
+            .button { font-size: $small; }
+        
+        }
+    }
+
 
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
@@ -56,23 +39,25 @@
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) {
+    
+    margin-top: 0;
+    
+    .form__contact { padding-top: $baseline-medium; background: $kd-grey10; 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    }
 
-    .linked-in { 
+    .figure-pic {
+    
+        @include aspect-ratio (100%, 120%);
+        overflow: hidden;
         
-        .linkedin { &.logo { 
-
-            display: block;
-
-        }}
-        
-        .twitter { &.logo { 
-
-            display: block;
-
-        }}
-        
-        a { display: block; }
-        p { display: block; }
+        .figure__img { @include position ( absolute, 0 ); margin-top: -70px; }
         
     }
 
@@ -83,23 +68,25 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
+    
+    margin-top: 0;
+    
+    .form__contact { padding-top: $baseline-medium; background: $kd-grey10; 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    }
 
-    .linked-in { 
+    .figure-pic {
+    
+        @include aspect-ratio (100%, 120%);
+        overflow: hidden;
         
-        .linkedin { &.logo { 
-
-            display: block;
-
-        }}
-        
-        .twitter { &.logo { 
-
-            display: block;
-
-        }}
-        
-        a { display: block; }
-        p { display: block; }
+        .figure__img { @include position ( absolute, 0 ); margin-top: -70px; }
         
     }
 
@@ -111,24 +98,20 @@
 
 @include media-query(tablet) {
 
-    .linked-in { 
-        
-        .linkedin { &.logo { 
-
-            display: block;
-
-        }}
-        
-        .twitter { &.logo { 
-
-            display: block;
-
-        }}
-        
-        a { display: block; }
-        p { display: block; }
-        
+    margin-top: 0;
+    
+    .form__contact { 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    
     }
+    
+    
 
 }
 
@@ -138,24 +121,7 @@
 
 @include media-query(desk) {
 
-    .linked-in { 
-        
-        .linkedin { &.logo { 
-
-            display: inline-block;
-
-        }}
-        
-        .twitter { &.logo { 
-
-            display: inline-block;
-
-        }}
-        
-        a { display: inline-block; }
-        p { display: inline-block; }
-        
-    }
+    margin-top: $baseline;
 
 }
 
@@ -165,24 +131,7 @@
 
 @include media-query(desk-wide) {
 
-    .linked-in { 
-        
-        .linkedin { &.logo { 
-
-            display: inline-block;
-
-        }}
-        
-        .twitter { &.logo { 
-
-            display: inline-block;
-
-        }}
-        
-        a { display: inline-block; }
-        p { display: inline-block; }
-        
-    }
+    margin-top: $baseline;
 
 }
 

@@ -34,6 +34,7 @@
     text-align: center;
     padding: $baseline-small 0;
     display: block;
+    box-sizing: border-box;
     
     &.text { box-shadow: none ; border-radius: 0; color: $black; }
 
@@ -50,6 +51,12 @@
         padding: 0 10px;
 
     }
+    
+    &.blue { background: $kd-blueNavy; color: $black;
+    
+        &:hover,
+        &.active { background: $kd-cyan; }
+    }
 }
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
@@ -63,9 +70,12 @@ input[type='select'] {
     width: 100%!important;
     padding: $baseline-small 0!important;
     border: 0;
-    border-radius: 5px;
     text-indent: 10px;
     box-sizing: border-box;
+    
+    background: $white;
+    border: 1px solid $kd-grey20;
+    margin-bottom: $baseline-small;
 }
 
 .field__item { margin-bottom: 0; }
@@ -108,7 +118,7 @@ input[type='select'] {
 
 @include media-query(desk) {
 
-    .field__item { padding-right: $baseline-small; }
+    .field-item { margin-right: $baseline-large; }
 
 }
 
@@ -118,7 +128,7 @@ input[type='select'] {
 
 @include media-query(desk-wide) {
 
-    .field__item { padding-right: $baseline-small; }
+    .field-item { margin-right: $baseline-large; }
 
 }
 
