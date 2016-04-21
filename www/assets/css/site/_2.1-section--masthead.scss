@@ -29,8 +29,6 @@
         }
 
     }
-    
-
 
     .nav {
 
@@ -46,6 +44,18 @@
             }
         }
     }
+    
+        
+        .contact-number { 
+            
+            position: absolute; 
+            top: $baseline;
+            right: $baseline;
+            font-family: 'SSP-semibold';
+            list-style-type: none;
+            color: $kd-purple;
+            font-size: $medium;
+        }
 
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -70,7 +80,7 @@
                 
                 margin-top: $baseline-large;
                 
-                li { display: block; font-size: $small;
+                li { display: block; font-size: $medium;
                     
                     a { color: $white; 
                         outline: none; 
@@ -83,7 +93,7 @@
             
         }
         
-        .contact-number { position: absolute; top: 0; right: 0; display: none; font-family: 'SSP-semibold';}
+        .contact-number { display: none; }
 
     }
 
@@ -107,7 +117,7 @@
                 
                 margin-top: $baseline-large;
                 
-                li { display: block; font-size: $small;
+                li { display: block; font-size: $medium;
                     
                     a { color: $white; 
                         outline: none; 
@@ -120,7 +130,7 @@
             
         }
         
-        .contact-number { position: absolute; top: 0; right: 0; display: none; font-family: 'SSP-semibold';}
+        .contact-number { display: none; }
 
     }
 
@@ -144,7 +154,7 @@
                 
                 margin-top: $baseline-large;
                 
-                li { display: block; font-size: $small;
+                li { display: block; font-size: $medium;
                     
                     a { color: $white; 
                         outline: none; 
@@ -157,7 +167,7 @@
             
         }
         
-        .contact-number { position: absolute; top: 0; right: 0; display: none; font-family: 'SSP-semibold';}
+        .contact-number { display: none; }
 
     }
 
@@ -188,7 +198,7 @@
         
         .burger { display: none; }
         
-        .contact-number { position: absolute; top: 0; right: 0; display: block; font-family: 'SSP-semibold';}
+        .contact-number { display: block; }
 
     }
 
@@ -219,7 +229,7 @@
         
         .burger { display: none; }
         
-        .contact-number { position: absolute; top: 0; right: 0; display: block; font-family: 'SSP-semibold';}
+        .contact-number { display: block; }
     }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -1659,6 +1659,15 @@ input[type='select'] {
       text-decoration: none;
       background: #3A5181; }
 
+#masthead .contact-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: 'SSP-semibold';
+  list-style-type: none;
+  color: #29315F;
+  font-size: 1.125em; }
+
 @media only screen and (max-width: 320px) {
   #masthead .logo {
     width: 70%; }
@@ -1679,7 +1688,7 @@ input[type='select'] {
       margin-top: 80px; }
       #masthead .nav ul li {
         display: block;
-        font-size: 0.75em; }
+        font-size: 1.125em; }
         #masthead .nav ul li a {
           color: #fff;
           outline: none;
@@ -1693,11 +1702,7 @@ input[type='select'] {
       -webkit-transition: 0.3s;
               transition: 0.3s; }
   #masthead .contact-number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    font-family: 'SSP-semibold'; } }
+    display: none; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   #masthead .logo {
@@ -1721,7 +1726,7 @@ input[type='select'] {
       margin-top: 80px; }
       #masthead .nav ul li {
         display: block;
-        font-size: 0.75em; }
+        font-size: 1.125em; }
         #masthead .nav ul li a {
           color: #fff;
           outline: none;
@@ -1735,11 +1740,7 @@ input[type='select'] {
       -webkit-transition: 0.3s;
               transition: 0.3s; }
   #masthead .contact-number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    font-family: 'SSP-semibold'; } }
+    display: none; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   #masthead .logo {
@@ -1763,7 +1764,7 @@ input[type='select'] {
       margin-top: 80px; }
       #masthead .nav ul li {
         display: block;
-        font-size: 0.75em; }
+        font-size: 1.125em; }
         #masthead .nav ul li a {
           color: #fff;
           outline: none;
@@ -1777,11 +1778,7 @@ input[type='select'] {
       -webkit-transition: 0.3s;
               transition: 0.3s; }
   #masthead .contact-number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none;
-    font-family: 'SSP-semibold'; } }
+    display: none; } }
 
 @media only screen and (min-width: 1024px) {
   #masthead .logo {
@@ -1803,11 +1800,7 @@ input[type='select'] {
   #masthead .burger {
     display: none; }
   #masthead .contact-number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    font-family: 'SSP-semibold'; } }
+    display: block; } }
 
 @media only screen and (min-width: 1200px) {
   #masthead .logo {
@@ -1829,11 +1822,7 @@ input[type='select'] {
   #masthead .burger {
     display: none; }
   #masthead .contact-number {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    font-family: 'SSP-semibold'; } }
+    display: block; } }
 
 #footend {
   background: #29315F;
@@ -1972,7 +1961,7 @@ input[type='select'] {
       right: 20px;
       padding: 10px; }
       .section-front .front__text h1 {
-        font-size: 1.5em; }
+        font-size: 1.7em; }
       .section-front .front__text p {
         font-size: 1em; } }
   @media only screen and (min-width: 1024px) {
@@ -1987,7 +1976,7 @@ input[type='select'] {
       left: 40px;
       padding: 20px; }
       .section-front .front__text h1 {
-        font-size: 1.7em; }
+        font-size: 2em; }
       .section-front .front__text p {
         font-size: 1em; } }
   @media only screen and (min-width: 1200px) {
@@ -2002,7 +1991,7 @@ input[type='select'] {
       left: 80px;
       padding: 20px; }
       .section-front .front__text h1 {
-        font-size: 1.5em; }
+        font-size: 3em; }
       .section-front .front__text p {
         font-size: 1em; } }
 
